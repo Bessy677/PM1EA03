@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btnAtras"
+        style="@style/Boton"
+        android:background="@drawable/bg_boton_oscuro"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:text="@string/atras" />
+
+    <EditText
+        android:id="@+id/etBuscar"
+        style="@style/Campo"
+        android:layout_marginTop="10dp"
+        android:hint="@string/buscar"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textStyle="normal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/ayuda_lista"
+        android:textColor="@color/verde_oscuro"
+        android:textSize="12sp" />
+
+    <ListView
+        android:id="@+id/lvContactos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_lista"
+        android:divider="@null"
+        android:padding="2dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCompartir"
+            style="@style/Boton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_boton_verde"
+            android:text="@string/compartir_contacto" />
+
+        <Button
+            android:id="@+id/btnVerImagen"
+            style="@style/Boton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_boton_verde"
+            android:text="@string/ver_imagen" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnEliminar"
+            style="@style/Boton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_boton_oscuro"
+            android:text="@string/eliminar_contacto" />
+
+        <Button
+            android:id="@+id/btnActualizar"
+            style="@style/Boton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_boton_oscuro"
+            android:text="@string/actualizar_contacto" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="UTH"
+            android:textColor="@color/verde_primario"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:id="@+id/imgFoto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_foto"
+                android:contentDescription="Fotografía del contacto"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_persona" />
+
+            <ImageButton
+                android:id="@+id/btnCamara"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_circulo_oscuro"
+                android:contentDescription="Tomar fotografía"
+                android:src="@drawable/ic_camera" />
+        </FrameLayout>
+
+        <TextView style="@style/Etiqueta" android:text="@string/pais" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spPais"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnAgregarPais"
+                style="@style/Boton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_boton_oscuro"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:padding="0dp"
+                android:text="+"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <TextView style="@style/Etiqueta" android:text="@string/nombre" />
+
+        <EditText
+            android:id="@+id/etNombre"
+            style="@style/Campo"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName|textCapWords"
+            android:singleLine="true" />
+
+        <TextView style="@style/Etiqueta" android:text="@string/telefono" />
+
+        <EditText
+            android:id="@+id/etTelefono"
+            style="@style/Campo"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="8" />
+
+        <TextView style="@style/Etiqueta" android:text="@string/nota" />
+
+        <EditText
+            android:id="@+id/etNota"
+            style="@style/Campo"
+            android:background="@drawable/bg_nota"
+            android:gravity="top|start"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine|textCapSentences"
+            android:minLines="3"
+            android:textColor="@color/negro"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/btnSalvar"
+            style="@style/Boton"
+            android:layout_width="220dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_boton_verde"
+            android:text="@string/salvar_contacto" />
+
+        <Button
+            android:id="@+id/btnLista"
+            style="@style/Boton"
+            android:layout_width="220dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_boton_oscuro"
+            android:text="@string/contactos_salvados" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Agenda de Contactos</string>
+    <string name="pais">País</string>
+    <string name="nombre">Nombre</string>
+    <string name="telefono">Teléfono</string>
+    <string name="nota">Nota</string>
+    <string name="salvar_contacto">Salvar Contacto</string>
+    <string name="actualizar_contacto">Actualizar Contacto</string>
+    <string name="contactos_salvados">Contactos Salvados</string>
+    <string name="atras">Atrás</string>
+    <string name="buscar">Buscar</string>
+    <string name="compartir_contacto">Compartir Contacto</string>
+    <string name="ver_imagen">Ver Imagen</string>
+    <string name="eliminar_contacto">Eliminar Contacto</string>
+    <string name="alerta">Alerta</string>
+    <string name="accion">Acción</string>
+    <string name="si">Sí</string>
+    <string name="no">No</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="ayuda_lista">Toque para seleccionar · mantenga presionado para llamar</string>
+</resources>
